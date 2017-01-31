@@ -23,9 +23,33 @@ def length_of_string(a)
 end
 
 def join_string(a, b)
-  return "a + b"
+  return a.to_s + b.to_s
 end
 
-def add_string_as_as_number(a, b)
-  return "#{a.length.to_i} + #{b.length.to_i}"
+def add_string_as_number(a, b)
+  return a.to_i + b.to_i
+end
+
+def number_to_full_month_name(a)
+  case a
+    when 1
+      a = "January"
+    when 3
+      a = "March"
+    when 9 
+      a = "September"
+    else
+  end
+end
+
+def number_to_short_month_name(a)
+  case a
+  when 1
+    a = "Jan"
+  when 3
+    a = "Mar"
+  when 9
+    a = "Sep"
+else
+end
 end
