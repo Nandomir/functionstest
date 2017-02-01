@@ -38,7 +38,6 @@ def number_to_full_month_name(a)
       a = "March"
     when 9 
       a = "September"
-    else
   end
 end
 
@@ -50,6 +49,18 @@ def number_to_short_month_name(a)
     a = "Mar"
   when 9
     a = "Sep"
-else
 end
+end
+
+def volume_of_a_cube(a)
+  return a ** 3
+  end
+
+
+def test_volume_of_sphere(a)
+  return
+end
+
+def fahrenheit_to_celsius(a)
+return a - 32 * 5 / 9 
 end

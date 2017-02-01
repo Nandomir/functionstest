@@ -56,7 +56,7 @@ class Functions_Practice < MiniTest::Test
   end
 
   def test_substring()
-    first_month_string = number_to_short_month_name( 1 )
+    first_month_string = number_to_short_month_name( 1 ) # it's function being assigned to the value - we're inspecting this vaule
     third_month_string = number_to_short_month_name( 3 )
     ninth_month_string = number_to_short_month_name( 9 )
     assert_equal( "Jan", first_month_string )
@@ -70,18 +70,20 @@ class Functions_Practice < MiniTest::Test
 
   #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
-
+  volume_result = volume_of_cube(3)
+  assert_equal(27, volume_result)
   end
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-
+    Math::PI
+  volume_of_sphere_result = 4/3 * PI * 3**3
+  assert_equal( 113, volume_of_sphere_result)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-
+    fahrenheit_to_celsius = fahrenheit(50)
+    assert_equal(10, fahrenheit_to_celsius_result)
   end
-
-
 end
